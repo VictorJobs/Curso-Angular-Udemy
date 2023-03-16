@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: ` <app-input [contador]="addValue"></app-input> <button (click)="add()"> Add </button> <hr>
+  template: ` <!-- <app-input [contador]="addValue"></app-input> <button (click)="add()"> Add </button> <hr>
 
    <ng-template  [ngIf]="getDados" >
     <h1>{{getDados.nome}}</h1>
@@ -16,9 +16,9 @@ import { Component, OnInit } from '@angular/core';
 
   <app-food-add></app-food-add>
   <app-food-list></app-food-list>
-
-
-
+  <hr>
+ -->
+   <app-forms></app-forms>
    <router-outlet></router-outlet>`,
 })
 export class AppComponent implements OnInit{
